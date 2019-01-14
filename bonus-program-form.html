@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Архив заказов</title>
+
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style-bonus-program.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+
+</head>
+<body>
+
+  <div class="kurierchikof-rs-top-menu">
+    <nav class="navbar navbar-default navbar-static-top custom-background-white custom-nav custom-font">
+      <div class="container h-100 custom-small-h100">
+        <div class="navbar-header h-100 pull-left custom-small-h100">
+          <a class="navbar-brand" href="#"><img class="custom-logo-img" src="img/logo.png" alt="Logo"></a>
+        </div>
+
+        <div class="navbar-header pull-right custom-small-h100 custom-align-btn">
+          <button type="button" 
+                  class="navbar-toggle collapsed" 
+                  data-toggle="collapse" 
+                  data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+        <div class="collapse navbar-collapse custom-big-h-100 w-100p" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav h-100 do-flex do-align-center m-l-1p w-25p custom-first-line">
+            <li class="custom-nav-item"><a href="#" class="custom-nav-link no-word-wrap">Мои заказы <span class="sr-only">(current)</span></a></li>
+            <li class="custom-nav-item"><a href="#" class="custom-nav-link">Тарифы</a></li>
+          </ul>
+
+          <div class="do-flex do-no-wrap do-justify-end do-align-center h-100 custom-second-line">
+            <form class="navbar-form h-100 col-xs-4 do-flex do-align-center p-0 ">
+              <button type="submit" class="btn custom-btn-create-order">Создать заказ</button>
+              <button type="button" class="btn custom-btn-cog p-0 ">
+                <span class="custom-fas-wrapper">
+                  <i class="fas fa-cog custom-cog-color"></i>
+                  <i class="fas fa-question-circle custom-question-icon" style="vertical-align: top;"></i>
+                </span>
+              </button>
+            </form>
+            
+            <ul class="nav navbar-nav navbar-right h-100 w-216 m-l-15 do-flex do-justify-end custom-thrid-line custom-m-t-10">
+              <li class="dropdown w-100p h-100">
+                <a href="#" class="dropdown-toggle do-flex do-align-center do-no-wrap do-justify-end custom-nav-btn-link"
+                            data-toggle="dropdown" 
+                            role="button" 
+                            aria-haspopup="true" 
+                            aria-expanded="false">
+                  
+                  <div class="custom-btn-img do-flex do-align-center do-justify-end">
+                    <img  src="img/user.png" alt="">
+                  </div>
+                  <div class="custom-btn-info">
+                    <h6 class="custom-btn-head">Бочкарева Наталья</h6>
+                    <p class="custom-btn-caption">заказчик(СПб)</p>
+                  </div>
+                </a>
+
+                <ul class="dropdown-menu custom-dropdown">
+                  <li class="do-flex do-direction-column do-align-start">
+                    <p class="custom-dropdown-comment">
+                      <span class="custom-dropdown-balance">Баланс: 0 р.</span> 
+                      <span class="custom-dropdown-bonuce">Бонусы: 0</span></p>
+                    <p class="custom-dropdown-comment">Доставки: 0 за декабрь</p>              
+                    <p class="custom-dropdown-comment">Скидка: %</p>
+                  </li>
+                  <li role="separator" class="divider"></li>
+                  <li class="custom-dropdown-item">
+                    <a href="#" class="custom-dropdown-link">
+                      <i class="fas fa-user fa-fw"></i>&ensp;
+                      Профиль
+                    </a>
+                  </li>
+                  <li class="custom-dropdown-item">
+                    <a href="#" class="custom-dropdown-link">
+                      <i class="fas fa-money-bill-alt fa-fw"></i>&ensp;
+                      Баланс
+                    </a>
+                  </li>
+                  
+                  <li class="custom-dropdown-item">
+                    <a href="#" class="custom-dropdown-link">
+                      <i class="fas fa-map-marker-alt fa-fw"></i>&ensp;
+                      Пункты выдачи
+                    </a>
+                  </li>
+                  <li class="custom-dropdown-item m-b-5">
+                    <a href="#" class="custom-dropdown-link">
+                      <i class="fas fa-sign-out-alt fa-fw"></i>&ensp;
+                      Выход
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+        
+      </div>
+    </nav>
+  </div> 
+
+  <div class="kurierchikof-rs-bonus-program-form m-t-n18">
+    <div class="container custom-font">
+      <div class="row">
+
+        <div class="col-sm-12">
+          <div class="custom-block-header">
+            <h2 class="custom-head">Бонусная программа</h2>
+          </div>  
+        </div>
+
+        <div class="col-sm-12 do-flex do-justify-space-between do-direction-column m-t-20">
+          <h5 class="custom-bonus-info-list-head m-b-20"><i class="fas fa-info-circle" style="color: #929594;"></i>&ensp;Теперь доставки в Курьерчикоф можно оплачивать бонусами! </h5>
+          <div class="custom-list-wrapper  do-flex do-small-direction-column">
+            <div class="custom-list-col">
+              
+              <ol class="custom-bonus-info-list">
+                <li class="custom-bonus-list-item">Бонусные баллы начисляются Заказчикам на "бонусный счет" в Курьерчикоф при завершении заказа. 
+                    При отмене заказа бонусы не начисляются.
+                </li>
+                <li class="custom-bonus-list-item">За каждый заказ, система начисляет 2% от стоимости доставки бонусами.</li>
+                <li class="custom-bonus-list-item">Оплачивать доставки бонусами можно также, как с баланса в Курьерчикоф.</li>
+                <li class="custom-bonus-list-item">Чтобы создать заказ с оплатой бонусами, выбирайте "Оплата бонусами" в методе оплаты доставки.</li>
+                <li class="custom-bonus-list-item">Частично использовать бонусы и частично другие методы оплаты (комбинировать) нельзя.</li>
+              </ol>
+            </div>
+            <div class="custom-list-col">
+              <ol class="custom-bonus-info-list" start="6">
+                <li class="custom-bonus-list-item">При неактивности (отсутствие завершенных заказов) более 10 дней, 
+                                                    бонусы начинают уменьшаться на 100 единиц в день.
+                </li>
+                <li class="custom-bonus-list-item">Бонусы не начисляются на доставки, оплаченные за бонусы, выполненные в рамках "Пакета доставок".</li>
+                <li class="custom-bonus-list-item">Срок действия бонусов устанавливается Администрацией сервиса.</li>
+              
+              </ol>
+
+              <p class="custom-bonus-list-edit-date"><i class="fas fa-edit"></i>&ensp;Редакция от 15.05.18</p>
+
+            </div>
+          </div>
+        </div>  
+      </div>
+    </div>      
+  </div>
+
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/script.js"></script>
+  
+</body>
+</html>

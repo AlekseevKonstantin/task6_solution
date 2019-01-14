@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Архив заказов</title>
+
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style-recharge.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+
+</head>
+<body>
+
+  <div class="kurierchikof-rs-top-menu">
+    <nav class="navbar navbar-default navbar-static-top custom-background-white custom-nav custom-font">
+      <div class="container h-100 custom-small-h100">
+        <div class="navbar-header h-100 pull-left custom-small-h100">
+          <a class="navbar-brand" href="#"><img class="custom-logo-img" src="img/logo.png" alt="Logo"></a>
+        </div>
+
+        <div class="navbar-header pull-right custom-small-h100 custom-align-btn">
+          <button type="button" 
+                  class="navbar-toggle collapsed" 
+                  data-toggle="collapse" 
+                  data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+        <div class="collapse navbar-collapse custom-big-h-100 w-100p" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav h-100 do-flex do-align-center m-l-1p w-25p custom-first-line">
+            <li class="custom-nav-item"><a href="#" class="custom-nav-link no-word-wrap">Мои заказы <span class="sr-only">(current)</span></a></li>
+            <li class="custom-nav-item"><a href="#" class="custom-nav-link">Тарифы</a></li>
+          </ul>
+
+          <div class="do-flex do-no-wrap do-justify-end do-align-center h-100 custom-second-line">
+            <form class="navbar-form h-100 col-xs-4 do-flex do-align-center p-0 ">
+              <button type="submit" class="btn custom-btn-create-order">Создать заказ</button>
+              <button type="button" class="btn custom-btn-cog p-0 ">
+                <span class="custom-fas-wrapper">
+                  <i class="fas fa-cog custom-cog-color"></i>
+                  <i class="fas fa-question-circle custom-question-icon" style="vertical-align: top;"></i>
+                </span>
+              </button>
+            </form>
+            
+            <ul class="nav navbar-nav navbar-right h-100 w-216 m-l-15 do-flex do-justify-end custom-thrid-line custom-m-t-10">
+              <li class="dropdown w-100p h-100">
+                <a href="#" class="dropdown-toggle do-flex do-align-center do-no-wrap do-justify-end custom-nav-btn-link"
+                            data-toggle="dropdown" 
+                            role="button" 
+                            aria-haspopup="true" 
+                            aria-expanded="false">
+                  
+                  <div class="custom-btn-img do-flex do-align-center do-justify-end">
+                    <img  src="img/user.png" alt="">
+                  </div>
+                  <div class="custom-btn-info">
+                    <h6 class="custom-btn-head">Бочкарева Наталья</h6>
+                    <p class="custom-btn-caption">заказчик(СПб)</p>
+                  </div>
+                </a>
+
+                <ul class="dropdown-menu custom-dropdown">
+                  <li class="do-flex do-direction-column do-align-start">
+                    <p class="custom-dropdown-comment">
+                      <span class="custom-dropdown-balance">Баланс: 0 р.</span> 
+                      <span class="custom-dropdown-bonuce">Бонусы: 0</span></p>
+                    <p class="custom-dropdown-comment">Доставки: 0 за декабрь</p>              
+                    <p class="custom-dropdown-comment">Скидка: %</p>
+                  </li>
+                  <li role="separator" class="divider"></li>
+                  <li class="custom-dropdown-item">
+                    <a href="#" class="custom-dropdown-link">
+                      <i class="fas fa-user fa-fw"></i>&ensp;
+                      Профиль
+                    </a>
+                  </li>
+                  <li class="custom-dropdown-item">
+                    <a href="#" class="custom-dropdown-link">
+                      <i class="fas fa-money-bill-alt fa-fw"></i>&ensp;
+                      Баланс
+                    </a>
+                  </li>
+                  
+                  <li class="custom-dropdown-item">
+                    <a href="#" class="custom-dropdown-link">
+                      <i class="fas fa-map-marker-alt fa-fw"></i>&ensp;
+                      Пункты выдачи
+                    </a>
+                  </li>
+                  <li class="custom-dropdown-item m-b-5">
+                    <a href="#" class="custom-dropdown-link">
+                      <i class="fas fa-sign-out-alt fa-fw"></i>&ensp;
+                      Выход
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+        
+      </div>
+    </nav>
+  </div> 
+  <div class="kurierchikof-rs-recharge-form m-t-n18">
+    <div class="container custom-font">
+      <div class="row">
+
+        <div class="col-sm-12">
+          
+          <div class="custom-block-header do-flex do-justify-space-between do-align-center do-small-direction-column do-small-align-start">
+    
+            <div class="do-flex do-align-center"> 
+              <h2 class="custom-head">Пополнение баланса</h2>
+            </div>
+
+            <ul class="nav do-flex do-align-center do-vsmall-direction-column do-vsmall-align-start h-100 m-t-10 m-r-n15">
+              <li role="presentation" class="custom-wrapper-nav-link"><a href="#" class="custom-nav-link">Пополнение баланса</a></li>
+              <li role="presentation" class="custom-wrapper-nav-link"><a href="#" class="custom-nav-link">Вывод средств</a></li>
+              <li role="presentation" class="custom-wrapper-nav-link"><a href="#" class="custom-nav-link">Архив пополнений</a></li>
+              <li role="presentation" class="custom-wrapper-nav-link"><a href="#" class="custom-nav-link">Архив выводов</a></li>
+              <li role="presentation" class="custom-wrapper-nav-link"><a href="#" class="custom-nav-link">История баланса</a></li>
+            </ul>
+                                            
+          </div>  
+        </div>
+
+        <div class="col-sm-12 m-t-36">
+          <ul class="nav nav-pills">
+            <li role="presentation" class="active" data-nav-pills-item="1"><a href="#">Пластиковая карта</a></li>
+            <li role="presentation" data-nav-pills-item="2"><a href="#">Счет для юр. лиц</a></li>
+          </ul>
+        </div>
+
+        <div class="col-sm-12 block-wrapper active" data-item-num="1">
+          <form class="form-horizontal do-small-flex do-small-direction-column do-small-align-start m-t-25">
+
+            <div class="form-group do-flex do-wrap  do-align-end do-small-direction-column do-small-align-start">
+
+              <div class="col-sm-5 w-small-100p p-r-0 p-0">
+                <h5 class="custom-new-card-head">Выберите карту:</h5>
+                <div class="inner-addon left-addon">  
+                  <i class="fas fa-credit-card custom-icon"></i>
+                  <i class="fas fa-caret-down custom-arrow-down"></i>
+                  <select class="custom-select-card">
+                    <option value="visa">visa</option>
+                    <option value="master card">master card</option>
+                  </select>
+                </div>  
+              </div>
+
+              <div class="col-sm-2 w-small-100p p-0">
+                <h5 class="custom-enter-sum-head">Введите сумму:</h5>
+                <div class="inner-addon left-addon">  
+                  <i class="fas fa-money-bill-wave custom-icon"></i>
+                  <i class="fas fa-caret-down custom-num-dec"></i>
+                  <i class="fas fa-caret-up custom-num-inc"></i>
+                  <input type="number" class="custom-enter-sum">
+                </div>  
+              </div>
+
+              <div class="col-sm-2 p-l-0">
+                <button type="submit" class="btn custom-btn-put">Пополнить</button>
+              </div>
+           
+              <div class="col-sm-12 p-0">
+                <p class="custom-info">Комиссия при пополнении - 0%</p>
+                <p class="custom-info">Ваш баланс будет пополнен в течении 5 минут (для пластиковых карт)</p>
+              </div>
+            </div>  
+          </form>
+
+          <div class="table-wrapper ">
+            <h3 class="custon-table-head">Последние пополнения</h3>
+            <div class="table-responsive m-t-30">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Тип</th>
+                    <th>id</th>
+                    <th>Телефон</th>
+                    <th>Сумма</th>
+                    <th>Статус</th>
+                    <th>Создан</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Нет записей</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-12 block-wrapper" data-item-num="2">
+          <form class="form-horizontal do-small-flex do-small-direction-column do-small-align-start m-t-25">
+
+            <div class="form-group do-flex do-wrap  do-align-end do-small-direction-column do-small-align-start">
+
+              <div class="col-sm-5 w-small-100p p-r-0 p-0">
+                <h5 class="custom-new-card-head">Выберите карту:</h5>
+                <div class="inner-addon left-addon">  
+                  <i class="fas fa-credit-card custom-icon"></i>
+                  <i class="fas fa-caret-down custom-arrow-down"></i>
+                  <select class="custom-select-card">
+                    <option value="visa">visa</option>
+                    <option value="master card">master card</option>
+                  </select>
+                </div>  
+              </div>
+
+              <div class="col-sm-2 w-small-100p p-0">
+                <h5 class="custom-enter-sum-head">Введите сумму:</h5>
+                <div class="inner-addon left-addon">  
+                  <i class="fas fa-money-bill-wave custom-icon"></i>
+                  <i class="fas fa-caret-down custom-num-dec"></i>
+                  <i class="fas fa-caret-up custom-num-inc"></i>
+                  <input type="number" class="custom-enter-sum">
+                </div>  
+              </div>
+
+              <div class="col-sm-2 p-l-0">
+                <button type="submit" class="btn custom-btn-put">Пополнить</button>
+              </div>
+            
+              <div class="col-sm-12 p-0">
+                <p class="custom-info">Комиссия при пополнении - 0%</p>
+                <p class="custom-info">Ваш баланс будет пополнен в течении 5 минут (для пластиковых карт)</p>
+              </div>
+            </div>  
+          </form>
+
+          <div class="table-wrapper ">
+            <h3 class="custon-table-head">Последние пополнения</h3>
+            <div class="table-responsive m-t-30">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Тип</th>
+                    <th>id</th>
+                    <th>Телефон</th>
+                    <th>Сумма</th>
+                    <th>Статус</th>
+                    <th>Создан</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Нет записей</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>      
+  </div>
+
+
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/script.js"></script>
+  
+</body>
+</html>
+
