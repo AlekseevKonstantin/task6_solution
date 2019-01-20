@@ -45,4 +45,12 @@ $(document).ready(function(){
     $(this).addClass('active');
     $(tableWrapper).addClass('active');
   });
+
+  function parseField(value){
+    return  value.replace(/[^0-9]/gi,'');
+  }
+
+  $('#inputSum').keyup(function(){
+    $(this).val(parseField($(this).val()));
+  });
 });
